@@ -86,7 +86,7 @@ const CreateUser = () => {
         }
 
         if (!form.street.trim()) {
-            newErrors.street = 'Address is required';
+            newErrors.street = 'Street is required';
         }
 
         if (!form.phone.trim()) {
@@ -247,22 +247,6 @@ const CreateUser = () => {
                     </div>
 
                     <div className="text-left">
-                        <label className="mb-2 block text-xs font-semibold text-slate-950" htmlFor="street">
-                            Address
-                        </label>
-                        <input
-                            className="h-11 w-full rounded-lg border border-slate-200 px-4 text-sm outline-none focus:border-violet-500"
-                            type="text"
-                            id="street"
-                            name="street"
-                            placeholder="Enter address"
-                            value={form.street}
-                            onChange={handleChange}
-                        />
-                        {errors.street && <p className="mt-1 text-xs text-red-500">{errors.street}</p>}
-                    </div>
-
-                    <div className="text-left">
                         <label className="mb-2 block text-xs font-semibold text-slate-950" htmlFor="phone">
                             Phone
                         </label>
@@ -292,6 +276,26 @@ const CreateUser = () => {
                             onChange={handleChange}
                         />
                         {errors.website && <p className="mt-1 text-xs text-red-500">{errors.website}</p>}
+                    </div>
+
+                    <div className="border-t border-slate-200 pt-5 text-left md:col-span-2">
+                        <h3 className="text-sm font-semibold text-slate-950">Address</h3>
+                    </div>
+
+                    <div className="text-left">
+                        <label className="mb-2 block text-xs font-semibold text-slate-950" htmlFor="street">
+                            Street
+                        </label>
+                        <input
+                            className="h-11 w-full rounded-lg border border-slate-200 px-4 text-sm outline-none focus:border-violet-500"
+                            type="text"
+                            id="street"
+                            name="street"
+                            placeholder="Enter street"
+                            value={form.street}
+                            onChange={handleChange}
+                        />
+                        {errors.street && <p className="mt-1 text-xs text-red-500">{errors.street}</p>}
                     </div>
 
                     <div className="text-left">

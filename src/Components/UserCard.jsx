@@ -8,7 +8,7 @@ const UserCard = ({ user }) => {
   return (
     <Link
       to={`/user/${user.id}`}
-      className="flex w-full items-center gap-3 rounded-lg border border-slate-200 bg-white p-3 text-left shadow-sm hover:border-violet-200 hover:shadow-md sm:block sm:p-5"
+      className="flex w-full items-center gap-3 rounded-lg border border-slate-200 bg-white p-3 text-left no-underline shadow-sm hover:border-violet-200 hover:no-underline hover:shadow-md sm:block sm:p-5"
     >
       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-violet-100 text-lg font-bold text-violet-700 sm:mx-auto sm:h-16 sm:w-16">
         {firstLetter}

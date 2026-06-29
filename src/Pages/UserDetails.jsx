@@ -89,11 +89,7 @@ const UserDetails = () => {
               </p>
             </div>
 
-            <div className="mt-5 h-28 rounded-lg bg-slate-100">
-              <div className="flex h-full items-center justify-center text-sm text-slate-500">
-                Map Preview
-              </div>
-            </div>
+         
           </div>
 
           <div className="rounded-xl border border-slate-200 bg-white p-5 text-left shadow-sm lg:col-span-3">
