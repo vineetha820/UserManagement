@@ -1,24 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import Dashboard from './Pages/Dashboard.jsx';
+import UserDetails from './Pages/UserDetails.jsx';
+import Navbar from './Components/navabr.jsx';
+import { DataProvider } from './context/DataContext.jsx';
+import CreateUser from './Components/CreateUser.jsx';
 
 function App() {
+  const location = useLocation();
+  const showNavbar = location.pathname === '/';
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataProvider>
+      <div className="App">
+        {showNavbar && <Navbar />}
+        <CreateUser />
+        <Routes>
+          <Route path='/' element={<Dashboard />} />
+          <Route path='/user/:id' element={<UserDetails />} />
+        </Routes>
+      </div>
+    </DataProvider>
   );
 }
 
