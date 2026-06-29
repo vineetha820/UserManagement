@@ -1,70 +1,126 @@
-# Getting Started with User Management App
+# User Management App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React app to view, search, create, and check user details. User data is loaded from the JSONPlaceholder API. New users are added to the app list after submitting the form.
+
+## Features
+
+- View users in cards
+- Search users by name
+- View full user details
+- Create a user with company, address, and location details
+- Basic form validation
+
+## Tech Stack
+
+- React
+- React Router
+- Tailwind CSS
+- Axios
+- Lucide React icons
+- Create React App
+
+## Setup Instructions
+
+1. Clone or download this project.
+
+2. Open the project folder:
+
+```bash
+cd UserManagement
+```
+
+3. Install dependencies:
+
+```bash
+npm install
+```
+
+4. Start the development server:
+
+```bash
+npm start
+```
+
+5. Open the app in your browser:
+
+```text
+http://localhost:3000
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
-
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Creates the build files inside the `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### `npm test`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Runs the test runner in watch mode.
 
-### `npm run eject`
+## Screenshots
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Screenshots are added inside `docs/screenshots/`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Dashboard
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+![Dashboard Desktop Screenshot](docs/screenshots/Dashboard.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Dashboard Mobile Screenshot](docs/screenshots/Mobile-based-DashboardScreen.png)
 
-## Learn More
+### Search
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+![Search Mobile Screenshot](docs/screenshots/Mobile-SearchScreen.png)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Search Filter With Added User Screenshot](docs/screenshots/Search%20Filter%20with%20Added%20User%20Screen.png)
 
-### Code Splitting
+### Create User Modal
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Create User Desktop Screenshot 1](docs/screenshots/createUserScreen1.png)
 
-### Analyzing the Bundle Size
+![Create User Desktop Screenshot 2](docs/screenshots/CreateUserScreen2.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Create User Mobile Screenshot 1](docs/screenshots/Mobile-CreateUserScreen1.png)
 
-### Making a Progressive Web App
+![Create User Mobile Screenshot 2](docs/screenshots/Mobile-CreateuserScreen2.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### User Details Page
 
-### Advanced Configuration
+![User Details Desktop Screenshot](docs/screenshots/userDetails.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![User Details Mobile Screenshot 1](docs/screenshots/Mobie-UserDetailsScreen1.png)
 
-### Deployment
+![User Details Mobile Screenshot 2](docs/screenshots/Mobile-UserDetailsScreen2.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Project Structure
 
-### `npm run build` fails to minify
+```text
+src/
+  api/
+    userapi.js
+  Components/
+    CreateUser.jsx
+    Searchbar.jsx
+    UserCard.jsx
+    navabr.jsx
+  context/
+    DataContext.jsx
+  Pages/
+    Dashboard.jsx
+    UserDetails.jsx
+  App.js
+  index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## API
+
+The app fetches user data from:
+
+```text
+https://jsonplaceholder.typicode.com/users
+```
+
+Created users are stored in state only. They will not be saved in the API.

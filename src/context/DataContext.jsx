@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
-import { getusers } from '../api/userapi.js';
+import { getUsers } from '../api/userapi.js';
 
 const DataContext = createContext(null);
 
@@ -14,7 +14,7 @@ export const DataProvider = ({ children }) => {
     const fetchUsers = async () => {
       setIsLoading(true);
       try {
-        const usersData = await getusers();
+        const usersData = await getUsers();
         setUsers(usersData);
       } catch (err) {
         console.error('Error fetching users:', err);

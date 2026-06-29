@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, Building2, MapPin } from 'lucide-react';
-import { getuserbyid } from '../api/userapi.js';
+import { getUserById } from '../api/userapi.js';
 
 const UserDetails = () => {
   const { id } = useParams();
@@ -9,16 +9,16 @@ const UserDetails = () => {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    const fetchuser = async () => {
+    const fetchUser = async () => {
       try {
-        const userData = await getuserbyid(id);
+        const userData = await getUserById(id);
         setUser(userData);
       } catch (error) {
-        console.error("Error fetching user details:", error);
+        console.error('Error fetching user details:', error);
       }
     };
 
-    fetchuser();
+    fetchUser();
   }, [id]);
 
   if (!user) {
