@@ -17,7 +17,8 @@ A simple React app to view, search, create, and check user details. User data is
 - Tailwind CSS
 - Axios
 - Lucide React icons
-- Create React App
+- Context Api
+- React Hooks
 
 ## Setup Instructions
 
@@ -100,10 +101,10 @@ Screenshots are added inside `docs/screenshots/`.
 ```text
 src/
   api/
-    userapi.js
+    userApi.js
   Components/
     CreateUser.jsx
-    Searchbar.jsx
+    SearchBar.jsx
     UserCard.jsx
     Navbar.jsx
   context/

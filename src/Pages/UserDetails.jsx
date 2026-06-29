@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft, Building2, MapPin } from 'lucide-react';
-import { getUserById } from '../api/userapi.js';
+import { getUserById } from '../api/userApi.js';
 
 const UserDetails = () => {
   const { id } = useParams();
