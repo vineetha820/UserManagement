@@ -1,6 +1,6 @@
 import React from "react";
 import { Menu, Plus } from "lucide-react";
-import Searchbar from "./Searchbar";
+import Searchbar from "./Searchbar.jsx";
 import { useData } from '../context/DataContext.jsx';
 
 const Navbar = () => {

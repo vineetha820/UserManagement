@@ -105,7 +105,7 @@ src/
     CreateUser.jsx
     Searchbar.jsx
     UserCard.jsx
-    navabr.jsx
+    Navbar.jsx
   context/
     DataContext.jsx
   Pages/
