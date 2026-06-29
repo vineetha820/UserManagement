@@ -64,37 +64,37 @@ Runs the test runner in watch mode.
 
 ## Screenshots
 
-Screenshots are added inside `docs/screenshots/`.
+Screenshots are added inside `docs/Screenshots/`.
 
 ### Dashboard
 
-![Dashboard Desktop Screenshot](./docs/screenshots/Dashboard.png)
+![Dashboard Desktop Screenshot](./docs/Screenshots/Dashboard.png)
 
-![Dashboard Mobile Screenshot](./docs/screenshots/Mobile-based-DashboardScreen.png)
+![Dashboard Mobile Screenshot](./docs/Screenshots/Mobile-based-DashboardScreen.png)
 
 ### Search
 
-![Search Mobile Screenshot](./docs/screenshots/Mobile-SearchScreen.png)
+![Search Mobile Screenshot](./docs/Screenshots/Mobile-SearchScreen.png)
 
-![Search Filter With Added User Screenshot](./docs/screenshots/Search%20Filter%20with%20Added%20User%20Screen.png)
+![Search Filter With Added User Screenshot](./docs/Screenshots/Search%20Filter%20with%20Added%20User%20Screen.png)
 
 ### Create User Modal
 
-![Create User Desktop Screenshot 1](./docs/screenshots/createUserScreen1.png)
+![Create User Desktop Screenshot 1](./docs/Screenshots/createUserScreen1.png)
 
-![Create User Desktop Screenshot 2](./docs/screenshots/CreateUserScreen2.png)
+![Create User Desktop Screenshot 2](./docs/Screenshots/CreateUserScreen2.png)
 
-![Create User Mobile Screenshot 1](./docs/screenshots/Mobile-CreateUserScreen1.png)
+![Create User Mobile Screenshot 1](./docs/Screenshots/Mobile-CreateUserScreen1.png)
 
-![Create User Mobile Screenshot 2](./docs/screenshots/Mobile-CreateuserScreen2.png)
+![Create User Mobile Screenshot 2](./docs/Screenshots/Mobile-CreateuserScreen2.png)
 
 ### User Details Page
 
-![User Details Desktop Screenshot](./docs/screenshots/userDetails.png)
+![User Details Desktop Screenshot](./docs/Screenshots/userDetails.png)
 
-![User Details Mobile Screenshot 1](./docs/screenshots/Mobie-UserDetailsScreen1.png)
+![User Details Mobile Screenshot 1](./docs/Screenshots/Mobie-UserDetailsScreen1.png)
 
-![User Details Mobile Screenshot 2](./docs/screenshots/Mobile-UserDetailsScreen2.png)
+![User Details Mobile Screenshot 2](./docs/Screenshots/Mobile-UserDetailsScreen2.png)
 
 ## Project Structure
 
